@@ -5,6 +5,9 @@ More information about the CocoPi3 project can be found here:
 
 https://docs.google.com/document/d/1BkhNFjF3vd7sCoy1E6qa7TlPGUPdZMy2xz4EqZoyqtk/edit?usp=sharing
 
+Raspbian:
+https://www.raspberrypi.org/downloads/raspbian/
+
 CocoPi3 Facebook Page:
 https://www.facebook.com/groups/748644118674047/
 
