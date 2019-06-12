@@ -1,5 +1,5 @@
 # CocoPi3
-The CocoPi3 project is based on work from many other projects and individuals.  The sum of all the peices became the Raspbian based CocoPi3 distribution for the RPi3 (or B+).  This repo only includes scripts and/or configuration files at the moment, but this will allow for some very easy updating for bugs or enhancements.
+The CocoPi3 project is based on work from many other projects and individuals.  The sum of all the pieces became the Raspbian based CocoPi3 distribution for the RPi3 (or B+).  This repo only includes scripts and/or configuration files at the moment, but this will allow for some very easy updating for bugs or enhancements.
 
 More information about the CocoPi3 project can be found here:
 
