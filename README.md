@@ -22,3 +22,6 @@ https://sites.google.com/site/drivewire4/
 
 Emceed:
 https://groups.yahoo.com/neo/groups/TRS80MC10Club/files/Emcee%20Client%20and%20Server/
+
+tcpser:
+https://github.com/FozzTexx/tcpser
