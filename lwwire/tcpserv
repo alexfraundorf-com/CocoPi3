@@ -1,0 +1,10 @@
+# edit the drive=0 and drive=1 lines to point to whatever DSK images 
+# you would like to load
+# [CTRL-X] and Y to save and exit
+
+while true
+do
+ncat -lp 65504 -e "./lwwire ext=./lwwire-packet.so \
+drive=0,/media/share1/COCO/fuzix/with-cbe/fuzix.dsk \
+drive=1,/media/share1/COCO/fuzix/with-cbe//fuzixfs.dsk"
+done

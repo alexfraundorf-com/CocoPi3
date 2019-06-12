@@ -1,0 +1,4 @@
+./lwwire-serial /dev/ttyUSB0 115200 ./lwwire ext=/home/pi/lwwire/lwwire-packet.so drive=0,/media/share1/COCO/fuzix/with-cbe/fuzixfs.dsk drive=1,/media/share1/COCO/fuzix/with-cbe/fuzixfs.dsk
+
+
+
