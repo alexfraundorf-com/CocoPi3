@@ -31,3 +31,9 @@ https://groups.yahoo.com/neo/groups/TRS80MC10Club/files/Emcee%20Client%20and%20S
 
 tcpser:
 https://github.com/FozzTexx/tcpser
+
+Fuzix:
+https://github.com/EtchedPixels/FUZIX
+
+NitOS9 EOU:
+http://www.lcurtisboyle.com/nitros9/nitros9.html
