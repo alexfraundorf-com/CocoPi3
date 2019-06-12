@@ -35,5 +35,5 @@ https://github.com/FozzTexx/tcpser
 Fuzix:
 https://github.com/EtchedPixels/FUZIX
 
-NitOS9 EOU:
+NitrOS9 EOU:
 http://www.lcurtisboyle.com/nitros9/nitros9.html
