@@ -234,10 +234,9 @@ if [[ $2 =~ Y|y ]];then
 		echo -e
 
 		cd $HOME/pyDriveWire
-		#./pyDriveWire --stop
-		#rm /tmp/pyDriveWire.pid
-
+		./pyDriveWire --stop
 		kill $(ps aux | grep 'pyDriveWire' | awk '{print $2}')
+    rm /tmp/pyDriveWire.pid
 
 		echo -e
 		echo -e "Done."
