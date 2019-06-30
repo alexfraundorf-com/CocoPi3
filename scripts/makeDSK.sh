@@ -37,6 +37,9 @@ functionErrorLevel() {
 
 }
 
+# use parameter file for MAME (if found)
+MAMEPARMSFILE=`cat $HOME/.mame/.optional_mame_parameters.txt`
+export MAMEPARMS=$MAMEPARMSFILE
 
 # get name of script and place it into a variable
 scriptname=`basename "$0"`
@@ -212,7 +215,7 @@ if [[ $2 =~ Y|y ]];then
 		echo -e
 
 
-		mame $1 -homepath $HOME/.mame -cart /media/share1/roms/hdbdw3bck.rom -ext fdcv11 -ui_active -skip_gameinfo
+		mame $1 -homepath $HOME/.mame -cart /media/share1/roms/hdbdw3bck.rom -ext fdcv11 $MAMEPARMS
 
 		# eject disk from DriveWire
 		java -jar $HOME/DriveWire4/DW4CLI.jar --instance="0" -command='dw disk eject '"0"
@@ -271,7 +274,7 @@ if [[ $2 =~ Y|y ]];then
 		echo -e
 
 
-		mame $1 -homepath $HOME/.mame -ui_active -skip_gameinfo
+		mame $1 -homepath $HOME/.mame $MAMEPARMS
 
 		# eject disk from DriveWire
 		java -jar $HOME/DriveWire4/DW4CLI.jar --instance="0" -command='dw disk eject '"0"
@@ -317,7 +320,7 @@ else
 
 	if [[ $1 =~ coco2|coco2b|coco2h|coco2bh|coco3|coco3|coco3h|coco3p ]];then
 
-		mame -homepath $HOME/.mame $1 -flop1 "$PWD/$floppy.DSK" -ui_active -skip_gameinfo
+		mame -homepath $HOME/.mame $1 -flop1 "$PWD/$floppy.DSK" $MAMEPARMS
 
 		echo -e
 		echo -e "Done."
