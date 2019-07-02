@@ -28,24 +28,25 @@
     "25" "Select    default Main Menu" \
     "26" "Select    default .bashrc (CocoPi3 logo background)" \
     "27" "Edit      optional MAME parameters (CAUTION)" \
-    "28" "Edit      WiFi configuration" \
-    "29" "Edit      pyDriveWire configuration" \
-    "30" "Adjust    RPi3 audio volume" \
-    "31" "Test      Bluetooth/USB Game Controller" \
-    "32" "Run       Raspi-Config Script" \
-    "33" "Edit      /boot/config.txt (DANGEROUS)" \
-    "34" "Sync      Cloud Services" \
-    "35" "Show      Existing Bluetooth Pairing(s)" \
-    "36" "Backup    Existing Bluetooth Pairing(s)" \
-    "37" "Restore   Bluetooth Pairing(s) from Archive" \
-    "38" "Backup    RPi3 to alternate SD card" \
-    "39" "Download  ROM images to /media/share1/roms" \
-    "40" "Download  Latest Fuzix Nightly image" \
-    "41" "Download  Latest NitrOS9 EOU image" \
-    "42" "Shutdown  apache2 Web Server" \
-    "43" "Reboot    Raspberry Pi 3" \
-    "44" "Shutdown  Raspberry Pi 3" \
-    "45" "Return to Main Menu" \
+    "28" "Edit      optional XRoar parameters (CAUTION)" \
+    "29" "Edit      WiFi configuration" \
+    "30" "Edit      pyDriveWire configuration" \
+    "31" "Adjust    RPi3 audio volume" \
+    "32" "Test      Bluetooth/USB Game Controller" \
+    "33" "Run       Raspi-Config Script" \
+    "34" "Edit      /boot/config.txt (DANGEROUS)" \
+    "35" "Sync      Cloud Services" \
+    "36" "Show      Existing Bluetooth Pairing(s)" \
+    "37" "Backup    Existing Bluetooth Pairing(s)" \
+    "38" "Restore   Bluetooth Pairing(s) from Archive" \
+    "39" "Backup    RPi3 to alternate SD card" \
+    "40" "Download  ROM images to /media/share1/roms" \
+    "41" "Download  Latest Fuzix Nightly image" \
+    "42" "Download  Latest NitrOS9 EOU image" \
+    "43" "Shutdown  apache2 Web Server" \
+    "44" "Reboot    Raspberry Pi 3" \
+    "45" "Shutdown  Raspberry Pi 3" \
+    "46" "Return to Main Menu" \
     3>&1 1>&2 2>&3)
 
     # Below you can enter the corresponding commands
@@ -78,23 +79,24 @@
         25) select-menu.sh && CocoPi3-menu-Utilities.sh;;
         26) select-bashrc.sh && CocoPi3-menu-Utilities.sh;;
         27) editMAMEparms.sh && CocoPi3-menu-Utilities.sh;;
-        28) editWiFi.sh && CocoPi3-menu-Utilities.sh;;
-        29) editpyDWconfig.sh && CocoPi3-menu-Utilities.sh;;
-        30) adjustVol.sh && CocoPi3-menu-Utilities.sh ;;
-        31) test-controller.sh && CocoPi3-menu-Utilities.sh;;
-	32) runRaspiConfig.sh && CocoPi3-menu-Utilities.sh;;
-	33) editConfig-txt.sh && CocoPi3-menu-Utilities.sh;;
-        34) CocoPi3-menu-rclone.sh;;
-        35) showBluetoothPairings.sh && CocoPi3-menu-Utilities.sh;;
-        36) backupBluetoothPairings.sh && CocoPi3-menu-Utilities.sh;;
-        37) restoreBluetoothPairings.sh && CocoPi3-menu-Utilities.sh;;
-        38) backupSD.sh && CocoPi3-menu-Utilities.sh;;
-        39) downloadROMs.sh && CocoPi3-menu-Utilities.sh;;
-        40) downloadFuzixNightly.sh && CocoPi3-menu-Utilities.sh;;
-        41) downloadNitrOS9EOU.sh && CocoPi3-menu-Utilities.sh;;
-        42) shutdownApache2.sh && CocoPi3-menu-Utilities.sh;;
-        43) rebootRPi3.sh;;
-        44) shutdownRPi3.sh;;
-        45) menu;;
+        28) editXROARparms.sh && CocoPi3-menu-Utilities.sh;;
+        29) editWiFi.sh && CocoPi3-menu-Utilities.sh;;
+        30) editpyDWconfig.sh && CocoPi3-menu-Utilities.sh;;
+        31) adjustVol.sh && CocoPi3-menu-Utilities.sh ;;
+        32) test-controller.sh && CocoPi3-menu-Utilities.sh;;
+	33) runRaspiConfig.sh && CocoPi3-menu-Utilities.sh;;
+	34) editConfig-txt.sh && CocoPi3-menu-Utilities.sh;;
+        35) CocoPi3-menu-rclone.sh;;
+        36) showBluetoothPairings.sh && CocoPi3-menu-Utilities.sh;;
+        37) backupBluetoothPairings.sh && CocoPi3-menu-Utilities.sh;;
+        38) restoreBluetoothPairings.sh && CocoPi3-menu-Utilities.sh;;
+        39) backupSD.sh && CocoPi3-menu-Utilities.sh;;
+        40) downloadROMs.sh && CocoPi3-menu-Utilities.sh;;
+        41) downloadFuzixNightly.sh && CocoPi3-menu-Utilities.sh;;
+        42) downloadNitrOS9EOU.sh && CocoPi3-menu-Utilities.sh;;
+        43) shutdownApache2.sh && CocoPi3-menu-Utilities.sh;;
+        44) rebootRPi3.sh;;
+        45) shutdownRPi3.sh;;
+        46) menu;;
         *) echo "Quitting...";;
     esac

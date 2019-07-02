@@ -14,7 +14,7 @@ rm msg.txt
 
 nano $HOME/.xroar/.optional_xroar_parameters.txt
 
-MAMEPARMSFILE=`cat $HOME/.xroar/.optional_xroar_parameters.txt`
+XROARPARMSFILE=`cat $HOME/.xroar/.optional_xroar_parameters.txt`
 export XROARPARMS=$XROARPARMSFILE
 set XROARPARMS=$XROARPARMSFILE
 
