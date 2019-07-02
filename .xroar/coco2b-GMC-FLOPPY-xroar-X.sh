@@ -2,6 +2,9 @@
 
 cd $HOME/.xroar
 
+XROARPARMSFILE=`cat $HOME/.xroar/.optional_xroar_parameters.txt`
+export XROARPARMS=$XROARPARMSFILE
+
 clear
 
     echo " TRS-80 Color Computer 2 w/64K RAM with Game Master Cartridge" > msg.txt
@@ -24,7 +27,7 @@ then
     	read -p  "Press any key to continue." -n1 -s
     	echo
 
-	startx /usr/bin/xroar -c $HOME/.xroar/xroar.conf -cart gmc -no-cart-autorun -machine coco2bus -cart mpi -mpi-load-cart 0=gmc -mpi-load-cart 3=rsdos -mpi-slot 3 -load "$floppy"
+	startx /usr/bin/xroar -c $HOME/.xroar/xroar.conf -cart gmc -no-cart-autorun -machine coco2bus -cart mpi -mpi-load-cart 0=gmc -mpi-load-cart 3=rsdos -mpi-slot 3 -load "$floppy" $XROARPARMS
 
     else
 
@@ -39,7 +42,7 @@ then
 
 else
 
-    startx /usr/bin/xroar -c $HOME/.xroar/xroar.conf -cart gmc -no-cart-autorun -machine coco2bus -cart mpi -mpi-load-cart 0=gmc -mpi-load-cart 3=rsdos -mpi-slot 3
+    startx /usr/bin/xroar -c $HOME/.xroar/xroar.conf -cart gmc -no-cart-autorun -machine coco2bus -cart mpi -mpi-load-cart 0=gmc -mpi-load-cart 3=rsdos -mpi-slot 3 $XROARPARMS
 fi
 
 # capture XRoar ERRORLEVEL

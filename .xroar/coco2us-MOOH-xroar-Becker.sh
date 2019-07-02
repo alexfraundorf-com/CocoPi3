@@ -2,6 +2,9 @@
 
 cd $HOME/.xroar
 
+XROARPARMSFILE=`cat $HOME/.xroar/.optional_xroar_parameters.txt`
+export XROARPARMS=$XROARPARMSFILE
+
 clear
 
     echo " TRS-80 Color Computer 2 w/512K RAM using a MOOH\n" > msg.txt
@@ -29,7 +32,7 @@ clear
 
 # DW disk image way
 #  xroar -default-machine cocous -cart mooh -cart-becker -run kernel_becker.bin
-   xroar -default-machine cocous -cart mooh -cart-becker -run kernel_65spi.bin
+   xroar -default-machine cocous -cart mooh -cart-becker -run kernel_65spi.bin $XROARPARMS
 
 # capture XRoar ERRORLEVEL
 

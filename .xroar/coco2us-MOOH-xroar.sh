@@ -2,6 +2,9 @@
 
 cd $HOME/.xroar
 
+XROARPARMSFILE=`cat $HOME/.xroar/.optional_xroar_parameters.txt`
+export XROARPARMS=$XROARPARMSFILE
+
 clear
 
     echo " TRS-80 Color Computer 2 w/512K RAM using a MOOH\n" > msg.txt
@@ -24,7 +27,7 @@ clear
     ln -s sdcard-dualboot-co42.img sdcard.img
 
 #    xroar -default-machine cocous -cart mooh -cart-rom sdbdos-eprom8-all-v1.rom -ao-fragments 1
-    xroar -default-machine cocous -cart mooh -cart-rom sdbdos-eprom8-all-v1.rom
+    xroar -default-machine cocous -cart mooh -cart-rom sdbdos-eprom8-all-v1.rom $XROARPARMS
 
 # capture XRoar ERRORLEVEL
 

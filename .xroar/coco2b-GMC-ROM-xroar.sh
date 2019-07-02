@@ -2,6 +2,9 @@
 
 cd $HOME/.xroar
 
+XROARPARMSFILE=`cat $HOME/.xroar/.optional_xroar_parameters.txt`
+export XROARPARMS=$XROARPARMSFILE
+
 clear
 
     echo " TRS-80 Color Computer 2 w/64K RAM with Game Master Cartridge" > msg.txt
@@ -24,7 +27,7 @@ then
     	read -p  "Press any key to continue." -n1 -s
     	echo
 
-	xroar -c $HOME/.xroar/xroar.conf -default-machine coco2bus -cart gmc -cart-rom "$rom"
+	xroar -c $HOME/.xroar/xroar.conf -default-machine coco2bus -cart gmc -cart-rom "$rom" $XROARPARMS
 
     else
 
@@ -39,7 +42,7 @@ then
 
 else
 
-    xroar -c $HOME/.xroar/xroar.conf -default-machine coco2bus -cart gmc -no-cart-autorun
+    xroar -c $HOME/.xroar/xroar.conf -default-machine coco2bus -cart gmc -no-cart-autorun $XROARPARMS
 fi
 
 # capture XRoar ERRORLEVEL

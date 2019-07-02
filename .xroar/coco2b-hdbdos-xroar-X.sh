@@ -2,13 +2,16 @@ clear
 
 cd $HOME/.xroar
 
+XROARPARMSFILE=`cat $HOME/.xroar/.optional_xroar_parameters.txt`
+export XROARPARMS=$XROARPARMSFILE
+
 echo " TRS-80 Color Computer 2 w/64K RAM using HDB-DOS\n\n" > msg.txt
 
 whiptail --title "XRoar Emulator" --textbox msg.txt 0 0
 rm msg.txt
 
 cd $HOME/.xroar
-startx /usr/bin/xroar -c $HOME/.xroar/xroar.conf -default-machine coco2bus -machine-cart hdbdos
+startx /usr/bin/xroar -c $HOME/.xroar/xroar.conf -default-machine coco2bus -machine-cart hdbdos $XROARPARMS
 
 # capture XRoar ERRORLEVEL
 

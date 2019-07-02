@@ -2,6 +2,9 @@
 
 cd $HOME/.xroar
 
+XROARPARMSFILE=`cat $HOME/.xroar/.optional_xroar_parameters.txt`
+export XROARPARMS=$XROARPARMSFILE
+
 clear
 
     echo " TRS-80 Color Computer 2 w/64K RAM using standard DECB\n\n" > msg.txt
@@ -23,7 +26,7 @@ then
       echo
 
       #xroar -c $HOME/.xroar/xroar.conf -default-machine coco2bus -ao-fragments 1 -load "$floppy"
-      xroar -c $HOME/.xroar/xroar.conf -default-machine coco2bus -load "$floppy"
+      xroar -c $HOME/.xroar/xroar.conf -default-machine coco2bus -load "$floppy" $XROARPARMS
 
     else
 
@@ -38,7 +41,7 @@ then
 
 else
 
-    xroar -c $HOME/.xroar/xroar.conf -default-machine coco2bus
+    xroar -c $HOME/.xroar/xroar.conf -default-machine coco2bus $XROARPARMS
 
 fi
 

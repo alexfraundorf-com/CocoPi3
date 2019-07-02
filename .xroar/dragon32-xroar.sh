@@ -2,6 +2,9 @@
 
 cd $HOME/.xroar
 
+XROARPARMSFILE=`cat $HOME/.xroar/.optional_xroar_parameters.txt`
+export XROARPARMS=$XROARPARMSFILE
+
 clear
 
     echo " Dragon 32 w/32K RAM\n\n" > msg.txt
@@ -22,7 +25,7 @@ then
     	echo
 
 	#xroar -c $HOME/.xroar/xroar.conf -default-machine coco2bus -ao-fragments 1 -load "$floppy"
-	xroar -c $HOME/.xroar/xroar.conf -default-machine dragon32 -load "$floppy"
+	xroar -c $HOME/.xroar/xroar.conf -default-machine dragon32 -load "$floppy" $XROARPARMS
 
     else
 
@@ -37,7 +40,7 @@ then
 
 else
 
-    xroar -c $HOME/.xroar/xroar.conf -default-machine dragon32 -ao-fragments 1
+    xroar -c $HOME/.xroar/xroar.conf -default-machine dragon32 -ao-fragments 1 $XROARPARMS
 
 fi
 
