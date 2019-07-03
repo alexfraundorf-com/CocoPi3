@@ -9,7 +9,7 @@ using HDB-DOS.\n\n" > msg.txt
 whiptail --title "MAME Emulator" --textbox msg.txt 0 0
 rm msg.txt
 
-mame coco3 -ramsize 512k -cart /media/share1/roms/hdbdw3bc3.rom $MAMEPARMS
+mame coco3dw1 -ramsize 512k $MAMEPARMS
 
 # capture MAME ERRORLEVEL
 
