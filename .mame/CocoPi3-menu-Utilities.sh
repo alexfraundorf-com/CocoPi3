@@ -22,31 +22,32 @@
     "19" "Mount     CASSETTE image in XRoar" \
     "20" "Mount     BIN image in XRoar" \
     "21" "Mount     ROM image in XRoar" \
-    "22" "Clear     all saved mount files" \
-    "23" "Select    MAME version" \
-    "24" "Select    XRoar version" \
-    "25" "Select    default Main Menu" \
-    "26" "Select    default .bashrc (CocoPi3 logo background)" \
-    "27" "Edit      optional MAME parameters (CAUTION)" \
-    "28" "Edit      optional XRoar parameters (CAUTION)" \
-    "29" "Edit      WiFi configuration" \
-    "30" "Edit      pyDriveWire configuration" \
-    "31" "Adjust    RPi3 audio volume" \
-    "32" "Test      Bluetooth/USB Game Controller" \
-    "33" "Run       Raspi-Config Script" \
-    "34" "Edit      /boot/config.txt (DANGEROUS)" \
-    "35" "Sync      Cloud Services" \
-    "36" "Show      Existing Bluetooth Pairing(s)" \
-    "37" "Backup    Existing Bluetooth Pairing(s)" \
-    "38" "Restore   Bluetooth Pairing(s) from Archive" \
-    "39" "Backup    RPi3 to alternate SD card" \
-    "40" "Download  ROM images to /media/share1/roms" \
-    "41" "Download  Latest Fuzix Nightly image" \
-    "42" "Download  Latest NitrOS9 EOU image" \
-    "43" "Shutdown  apache2 Web Server" \
-    "44" "Reboot    Raspberry Pi 3" \
-    "45" "Shutdown  Raspberry Pi 3" \
-    "46" "Return to Main Menu" \
+    "22" "Show      all saved mount files" \
+    "23" "Clear     all saved mount files" \
+    "24" "Select    MAME version" \
+    "25" "Select    XRoar version" \
+    "26" "Select    default Main Menu" \
+    "27" "Select    default .bashrc (CocoPi3 logo background)" \
+    "28" "Edit      optional MAME parameters (CAUTION)" \
+    "29" "Edit      optional XRoar parameters (CAUTION)" \
+    "30" "Edit      WiFi configuration" \
+    "31" "Edit      pyDriveWire configuration" \
+    "32" "Adjust    RPi3 audio volume" \
+    "33" "Test      Bluetooth/USB Game Controller" \
+    "34" "Run       Raspi-Config Script" \
+    "35" "Edit      /boot/config.txt (DANGEROUS)" \
+    "36" "Sync      Cloud Services" \
+    "37" "Show      Existing Bluetooth Pairing(s)" \
+    "38" "Backup    Existing Bluetooth Pairing(s)" \
+    "39" "Restore   Bluetooth Pairing(s) from Archive" \
+    "40" "Backup    RPi3 to alternate SD card" \
+    "41" "Download  ROM images to /media/share1/roms" \
+    "42" "Download  Latest Fuzix Nightly image" \
+    "43" "Download  Latest NitrOS9 EOU image" \
+    "44" "Shutdown  apache2 Web Server" \
+    "45" "Reboot    Raspberry Pi 3" \
+    "46" "Shutdown  Raspberry Pi 3" \
+    "47" "Return to Main Menu" \
     3>&1 1>&2 2>&3)
 
     # Below you can enter the corresponding commands
@@ -73,30 +74,31 @@
         19) mountXRoarCassette.sh 0 0 && CocoPi3-menu-Utilities.sh;;
         20) mountXRoarBin.sh 0 0 && CocoPi3-menu-Utilities.sh;;
         21) mountXRoarROM.sh 0 0 && CocoPi3-menu-Utilities.sh;;
-        22) mountClear.sh 0 0 && CocoPi3-menu-Utilities.sh;;
-        23) select-emu.sh && CocoPi3-menu-Utilities.sh;;
-        24) select-xroar.sh && CocoPi3-menu-Utilities.sh;;
-        25) select-menu.sh && CocoPi3-menu-Utilities.sh;;
-        26) select-bashrc.sh && CocoPi3-menu-Utilities.sh;;
-        27) editMAMEparms.sh && CocoPi3-menu-Utilities.sh;;
-        28) editXROARparms.sh && CocoPi3-menu-Utilities.sh;;
-        29) editWiFi.sh && CocoPi3-menu-Utilities.sh;;
-        30) editpyDWconfig.sh && CocoPi3-menu-Utilities.sh;;
-        31) adjustVol.sh && CocoPi3-menu-Utilities.sh ;;
-        32) test-controller.sh && CocoPi3-menu-Utilities.sh;;
-	33) runRaspiConfig.sh && CocoPi3-menu-Utilities.sh;;
-	34) editConfig-txt.sh && CocoPi3-menu-Utilities.sh;;
-        35) CocoPi3-menu-rclone.sh;;
-        36) showBluetoothPairings.sh && CocoPi3-menu-Utilities.sh;;
-        37) backupBluetoothPairings.sh && CocoPi3-menu-Utilities.sh;;
-        38) restoreBluetoothPairings.sh && CocoPi3-menu-Utilities.sh;;
-        39) backupSD.sh && CocoPi3-menu-Utilities.sh;;
-        40) downloadROMs.sh && CocoPi3-menu-Utilities.sh;;
-        41) downloadFuzixNightly.sh && CocoPi3-menu-Utilities.sh;;
-        42) downloadNitrOS9EOU.sh && CocoPi3-menu-Utilities.sh;;
-        43) shutdownApache2.sh && CocoPi3-menu-Utilities.sh;;
-        44) rebootRPi3.sh;;
-        45) shutdownRPi3.sh;;
-        46) menu;;
+        22) mountShow.sh 0 0 && CocoPi3-menu-Utilities.sh;;
+        23) mountClear.sh 0 0 && CocoPi3-menu-Utilities.sh;;
+        24) select-emu.sh && CocoPi3-menu-Utilities.sh;;
+        25) select-xroar.sh && CocoPi3-menu-Utilities.sh;;
+        26) select-menu.sh && CocoPi3-menu-Utilities.sh;;
+        27) select-bashrc.sh && CocoPi3-menu-Utilities.sh;;
+        28) editMAMEparms.sh && CocoPi3-menu-Utilities.sh;;
+        29) editXROARparms.sh && CocoPi3-menu-Utilities.sh;;
+        30) editWiFi.sh && CocoPi3-menu-Utilities.sh;;
+        31) editpyDWconfig.sh && CocoPi3-menu-Utilities.sh;;
+        32) adjustVol.sh && CocoPi3-menu-Utilities.sh ;;
+        33) test-controller.sh && CocoPi3-menu-Utilities.sh;;
+	34) runRaspiConfig.sh && CocoPi3-menu-Utilities.sh;;
+	35) editConfig-txt.sh && CocoPi3-menu-Utilities.sh;;
+        36) CocoPi3-menu-rclone.sh;;
+        37) showBluetoothPairings.sh && CocoPi3-menu-Utilities.sh;;
+        38) backupBluetoothPairings.sh && CocoPi3-menu-Utilities.sh;;
+        39) restoreBluetoothPairings.sh && CocoPi3-menu-Utilities.sh;;
+        40) backupSD.sh && CocoPi3-menu-Utilities.sh;;
+        41) downloadROMs.sh && CocoPi3-menu-Utilities.sh;;
+        42) downloadFuzixNightly.sh && CocoPi3-menu-Utilities.sh;;
+        43) downloadNitrOS9EOU.sh && CocoPi3-menu-Utilities.sh;;
+        44) shutdownApache2.sh && CocoPi3-menu-Utilities.sh;;
+        45) rebootRPi3.sh;;
+        46) shutdownRPi3.sh;;
+        47) menu;;
         *) echo "Quitting...";;
     esac
