@@ -44,10 +44,11 @@
     "41" "Download  ROM images to /media/share1/roms" \
     "42" "Download  Latest Fuzix Nightly image" \
     "43" "Download  Latest NitrOS9 EOU image" \
-    "44" "Shutdown  apache2 Web Server" \
-    "45" "Reboot    Raspberry Pi 3" \
-    "46" "Shutdown  Raspberry Pi 3" \
-    "47" "Return to Main Menu" \
+    "44" "Download  Latest UltimateSDC image" \
+    "45" "Shutdown  apache2 Web Server" \
+    "46" "Reboot    Raspberry Pi 3" \
+    "47" "Shutdown  Raspberry Pi 3" \
+    "48" "Return to Main Menu" \
     3>&1 1>&2 2>&3)
 
     # Below you can enter the corresponding commands
@@ -96,9 +97,10 @@
         41) downloadROMs.sh && CocoPi3-menu-Utilities.sh;;
         42) downloadFuzixNightly.sh && CocoPi3-menu-Utilities.sh;;
         43) downloadNitrOS9EOU.sh && CocoPi3-menu-Utilities.sh;;
-        44) shutdownApache2.sh && CocoPi3-menu-Utilities.sh;;
-        45) rebootRPi3.sh;;
-        46) shutdownRPi3.sh;;
-        47) menu;;
+        44) downloadUltimateSDC.sh && CocoPi3-menu-Utilities.sh;;
+        45) shutdownApache2.sh && CocoPi3-menu-Utilities.sh;;
+        46) rebootRPi3.sh;;
+        47) shutdownRPi3.sh;;
+        48) menu;;
         *) echo "Quitting...";;
     esac

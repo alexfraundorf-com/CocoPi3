@@ -13,7 +13,7 @@ then
          read -p "Press any key to mount a new floppy disk image or [CTRL-C] to exit. " -n1 -s
     else
          rm $HOME/.xroar/.xroar_floppy
-	 floppypath="/media/share1/COCO"
+	 floppypath="/media/share1"
     fi
 fi
 
