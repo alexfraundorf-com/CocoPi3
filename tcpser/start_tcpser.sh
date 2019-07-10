@@ -52,7 +52,7 @@ cd $HOME/tcpser
 # various command line options are listed below.  Only uncomment one at a time.
 
 # This one works with MAME (emulation) and Coco's using a Deluxe RS-232 Pak in an MPI
-tcpser -i "e1 k0 s0=1" -l 4 -v 6551 -s 9600 -p 6809 -tSs
+tcpser -i "e1 k0 s0=1" -l 4 -v 6551 -s 2400 -p 6809 -tSs
 
 
 # Left these here for other experimenting (some for emulation, some for real Coco's connected to the host
