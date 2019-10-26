@@ -24,7 +24,7 @@
         5) coco3-hdbdos-pyDW-PLATO.sh;;
         6) coco3-rgbdos-hd-rg.sh;;
         7) coco3-hdbdos-6309-nitros9.sh;;
-        8) coco3-yados.sh;;
+        8) coco3-yados-HD.sh;;
         9) coco3-Fuzix-pyDW.sh;;
        10) coco3-decb-term.sh;;
        11) menu;;

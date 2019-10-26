@@ -18,7 +18,7 @@
         3) coco2-decb-gamemaster.sh;;
         4) coco2-hdbdos.sh;;
         5) coco2-rgbdos-hd-rg.sh;;
-        6) coco2-yados.sh;;
+        6) coco2-yados-HD.sh;;
         7) menu;;
         *) echo "Quitting...";;
     esac
