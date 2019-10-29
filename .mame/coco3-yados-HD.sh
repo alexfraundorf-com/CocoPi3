@@ -17,7 +17,9 @@ echo " Tandy Color Computer 3 w/2MB RAM using YA-DOS & Hard Drive\n\n \
 whiptail --title "MAME Emulator" --textbox msg.txt 0 0
 rm msg.txt
 
-mame coco3 -ramsize 2048k -cart /media/share1/roms/yados.rom -hard1 /media/share1/EMU/VHD/YADOS-256MB-CF-SuperIDE.img $MAMEPARMS
+cp $HOME/.mame/cfg/coco3.cfg.cart-start-disabled $HOME/.mame/cfg/coco3.cfg
+
+mame coco3 -ramsize 2048k -cart /media/share1/roms/yados.rom -hard1 /media/share1/EMU/VHD/hdd-2gb-emuonly.img $MAMEPARMS
 
 # capture MAME ERRORLEVEL
 
